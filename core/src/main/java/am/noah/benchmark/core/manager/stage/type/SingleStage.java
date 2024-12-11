@@ -12,10 +12,10 @@ public class SingleStage extends StageManager {
     public SingleStage(Benchmark benchmark) {
         setBenchmark(benchmark);
 
-        benchmark.getBridge().log("Starting the Single Thread Benchmark. This will take 2.5 minutes");
+        benchmark.getBridge().log("Starting the Single Thread Benchmark. This will take 2 minutes");
 
         // Start a new Timer to end the stage.
-        benchmark.getTimerManager().newTimer(benchmark, 150);
+        benchmark.getTimerManager().newTimer(benchmark, 120);
 
         setTestManager(new TestManager(1));
     }

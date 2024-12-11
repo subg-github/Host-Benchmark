@@ -11,10 +11,10 @@ public class MultiStage extends StageManager {
     public MultiStage(Benchmark benchmark) {
         setBenchmark(benchmark);
 
-        benchmark.getBridge().log("Starting the Multi Thread Benchmark. This will take 2.5 minutes");
+        benchmark.getBridge().log("Starting the Multi Thread Benchmark. This will take 2 minutes");
 
         // Start a new Timer to end the stage.
-        benchmark.getTimerManager().newTimer(benchmark, 150);
+        benchmark.getTimerManager().newTimer(benchmark, 120);
 
         setTestManager(new TestManager(4));
     }
