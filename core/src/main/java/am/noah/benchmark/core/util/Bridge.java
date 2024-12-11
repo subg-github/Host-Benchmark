@@ -52,7 +52,7 @@ public class Bridge {
      * Run in order to inform the Core of the amount of plugins present on the server.
      */
     public void pluginListSize(int size) {
-        if (size > 1) {
+        if (size > 2) {
             log(benchmark.getInvalidTest().getExcessivePluginsResponse());
             stopServer();
         }
